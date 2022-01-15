@@ -4,10 +4,11 @@
 #include <math.h>
 #include <stdlib.h>
 int main(){
-   int t, a, b;
+   int t;
    scanf("%d", &t);
+   long long a, b;
    while (t--){
-      scanf("%d%d", &a, &b);
-      printf("%d\n", (b - a % b) % b);
+      scanf("%lld %lld", &a, &b);
+      printf("%lld\n", a % b ? b - a % b : 0);
    }
 }

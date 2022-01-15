@@ -1,12 +1,16 @@
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 int main(){
-    // f(n) =  - 1 + 2 - 3 + .. + ( - 1)^n n 
-    long long n;
-    scanf("%lld",&n);
-    // Here ? means true or false
-    // True means 1 or False means 0
-    // If it 1 execute : first term
-    printf("%lld",n%2==0?n/2:(n/2)-n);
-    // Taking 10; 10%2=0 ; so 10/2=5 ; Answer is 5
-    // Taking  5; 5%2=1 ; so -5>>1=-3; Answer is -3
+    int t, n;
+    scanf("%d", &t);
+    while (t--){
+        //If we take 3 for t the loop will be run 3 times.
+        scanf("%d", &n);
+        printf("%d\n", (n - 1) / 2);
+        //According to theory value of n 0,1,2 the answer is zero.
+        //If we take n=4 , then b will get 1 and a will get 3.
+        //So 3+1=4; b>a ; 
+    }
 }
